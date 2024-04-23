@@ -12,3 +12,11 @@
 
 ### Link to Video
 [INSERT]
+
+
+### Why Polymorphism Couldn't Happen
+
+
+### Class Structure
+ACharacter < APerformer
+AActor < APickup < CoinPickup (for coins) / SkullPickup (for skulls)
