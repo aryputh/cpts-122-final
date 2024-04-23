@@ -1,7 +1,8 @@
 ## cpts-122-final
 
 > [!WARNING]  
-> In the builds, the debug messages won't show. Refer to the vide for the messages.
+> In the builds, the debug messages won't show, becuase the build isn't a debug build.
+> Refer to the video for the messages.
 
 ### Playing Instructions
 1. Find and download the file in "Builds".
