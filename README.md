@@ -15,9 +15,14 @@
 
 ### Test Cases
 There are 5 different pickup types, these are our 5 test cases.
+1. Skulls
+2. Coins
+3. Candles
+4. [INSERT]
+5. [INSERT]
 
 ### Why Polymorphism Couldn't Happen
-
+[INSERT]
 
 ### Class Structure
 ACharacter < APerformer
