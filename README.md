@@ -13,6 +13,8 @@
 ### Link to Video
 [INSERT]
 
+### Test Cases
+There are 5 different pickup types, these are our 5 test cases.
 
 ### Why Polymorphism Couldn't Happen
 
