@@ -58,16 +58,3 @@ void APerformer::MouseVertical(float InputValue)
 {
 	AddControllerPitchInput(InputValue);
 }
-
-void APerformer::IncludeTreasure(FString Treasure2Include)
-{
-	if (treasureChest.Contains(Treasure2Include))
-	{
-		EnableTreasureChestAction.Broadcast(Treasure2Include, EPlayerTreasureAction::IncludeTreasure, false);
-	}
-	else
-	{
-		treasureChest.Add(Treasure2Include);
-		EnableTreasureChestAction.Broadcast(Treasure2Include, EPlayerTreasureAction::IncludeTreasure, true);
-	}
-}
