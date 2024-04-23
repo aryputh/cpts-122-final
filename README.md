@@ -31,4 +31,4 @@ Each item has it's own debug message.
 
 ### Class Structure
 ACharacter < APerformer<br>
-AActor < APickup < CoinPickup (for coins) / SkullPickup (for skulls)
+AActor < APickup < CoinPickup (for coins) / SkullPickup (for skulls) / CandlePickup (for candles) / ...
