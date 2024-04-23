@@ -1,6 +1,6 @@
 ## cpts-122-final
 
-> [!WARNING]  
+> [!CAUTION]  
 > In the builds, the debug messages won't show, becuase the build isn't a debug build.
 > Refer to the video for the messages.
 
