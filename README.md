@@ -1,5 +1,8 @@
 ## cpts-122-final
 
+> [!WARNING]  
+> In the builds, the debug messages won't show. Refer to the vide for the messages.
+
 ### Playing Instructions
 1. Find and download the file in "Builds".
 2. Double-click the .exe file.
@@ -14,7 +17,8 @@
 [INSERT]
 
 ### Test Cases
-There are 5 different pickup types, these are our 5 test cases.
+There are 5 different pickup types, these are our 5 test cases.<br>
+Each item has it's own debug message.
 1. Skulls
 2. Coins
 3. Candles
