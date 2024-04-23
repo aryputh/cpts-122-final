@@ -25,5 +25,5 @@ There are 5 different pickup types, these are our 5 test cases.
 [INSERT]
 
 ### Class Structure
-ACharacter < APerformer
+ACharacter < APerformer<br>
 AActor < APickup < CoinPickup (for coins) / SkullPickup (for skulls)
