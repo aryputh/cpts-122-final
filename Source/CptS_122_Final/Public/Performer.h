@@ -25,8 +25,11 @@ public:
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
 protected:
+	// Adds a property in the inspector, that we can edit
 	UPROPERTY(EditAnywhere)
 	class UCameraComponent* Camera;
+
+	// Define movement functions
 	void MoveForward(float InputValue);
 	void MoveRight(float InputValue);
 

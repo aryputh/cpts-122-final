@@ -13,8 +13,14 @@ APickupActor::APickupActor()
 	// Manages the collider for the pickup
 	ColliderComponent = CreateDefaultSubobject<USphereComponent>("ColliderComponent");
 	SetRootComponent(ColliderComponent);
+
+	// Allows the generating of overlap events, like triggers
 	ColliderComponent->SetGenerateOverlapEvents(true);
+
+	// Disables physics and only collides with stuff we specify
 	ColliderComponent->SetCollisionEnabled(ECollisionEnabled::QueryOnly);
+
+	// Set collisions to be ignored by everything, except for detecting overlapping on Pawns (like triggers)
 	ColliderComponent->SetCollisionResponseToAllChannels(ECR_Ignore);
 	ColliderComponent->SetCollisionResponseToChannel(ECC_Pawn, ECR_Overlap);
 
@@ -26,18 +32,22 @@ APickupActor::APickupActor()
 	// Allows the pickup to have a mesh component
 	MeshComponent = CreateDefaultSubobject<UStaticMeshComponent>("MeshComponent");
 	MeshComponent->SetupAttachment(ColliderComponent);
+
+	// Removes all collisions
 	MeshComponent->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+
+	// Ignores collisions by everything
 	MeshComponent->SetCollisionResponseToAllChannels(ECR_Ignore);
+
+	// Blocks the generating of overlap events, like triggers
 	MeshComponent->SetGenerateOverlapEvents(false);
 
 	// Rotates the pickup
 	RotatingMovementComponent = CreateDefaultSubobject<URotatingMovementComponent>("RotatingMovementComponent");
 }
 
-void APickupActor::OnBeginOverlapComponentEvent(
-	UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp,
-	int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult
-)
+void APickupActor::OnBeginOverlapComponentEvent(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor,
+	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
 	// Ensure the overlapping item is the player
 	if (!Cast<ACharacter>(OtherActor))
@@ -48,17 +58,21 @@ void APickupActor::OnBeginOverlapComponentEvent(
 	// Print a message notifying user of collection
 	if (GEngine && !PickupMessage.IsEmpty())
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::White, PickupMessage);
-	}
-	else if (PickupMessage.IsEmpty())
-	{
-		UE_LOG(LogTemp, Warning, TEXT("PickupMessage is empty, change it in the inspector."));
+		// Let player know they picked up an item
+		PrintCollectedMessage(PickupMessage, MessageColor);
 	}
 	else
 	{
+		// Warn about missing libraries
 		UE_LOG(LogTemp, Warning, TEXT("GEngine isn't valid, import it to see debug messages."));
 	}
 
-	// Destroy the pickup after collection
+	// Destroy the pickup object after collection
 	Destroy();
+}
+
+void APickupActor::PrintCollectedMessage(FString CollectionMessage, FColor CollectionMessageColor)
+{
+	// Add a debug message on the screen with out chosen message and color
+	GEngine->AddOnScreenDebugMessage(-1, 5.0f, MessageColor, CollectionMessage);
 }
