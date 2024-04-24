@@ -7,7 +7,7 @@
 4. Collect various items around the map.
 
 ### Download Link
-https://drive.google.com/file/d/1jQ-S5pchkhKBgvp0egKq04AtiRcXCnHa/view?usp=sharing
+[Google Drive](https://drive.google.com/file/d/1jQ-S5pchkhKBgvp0egKq04AtiRcXCnHa/view?usp=sharing) (Link may be deprecated later)
 
 ### Collaborators
 - Aryan Puthran (Section 6)
