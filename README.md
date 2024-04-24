@@ -1,14 +1,13 @@
 ## cpts-122-final
 
-> [!CAUTION]  
-> In the builds, the debug messages won't show, becuase the build isn't a debug build.
-> Refer to the video for the messages.
-
 ### Playing Instructions
-1. Find and download the .zip in "Builds" directory.
+1. Download the .zip linked below.
 2. Unzip file and double-click the .exe file, make sure all the contents of the .zip file are together.
 3. Use WASD to move and the mouse to look around.
 4. Collect various items around the map.
+
+### Download Link
+https://drive.google.com/file/d/1jQ-S5pchkhKBgvp0egKq04AtiRcXCnHa/view?usp=sharing
 
 ### Collaborators
 - Aryan Puthran (Section 6)
