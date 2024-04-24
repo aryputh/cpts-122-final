@@ -7,7 +7,7 @@
 4. Collect various items around the map.
 
 ### Download Link
-[Google Drive](https://drive.google.com/file/d/1jQ-S5pchkhKBgvp0egKq04AtiRcXCnHa/view?usp=sharing) (Link may be deprecated later)
+[Google Drive 🔗](https://drive.google.com/file/d/1jQ-S5pchkhKBgvp0egKq04AtiRcXCnHa/view?usp=sharing) (Link will be deprecated later)
 
 ### Collaborators
 - Aryan Puthran (Section 6)
@@ -26,7 +26,7 @@ Each item has it's own debug message and debug message color.
 5. Coffin x1
 
 ### Why Polymorphism Couldn't Happen
-Since this project is super simple, it's hard to justofy a way to implement polymorphism,<br>
+Since this project is super simple, it's hard to justify a way to implement polymorphism,<br>
 especially since all the functions have the same function. The printing of messages to the screen has parameters,<br>
 but isn't overloaded. Our game instead heavily uses inheritance. SInce th behavior of classes don't need to change or<br>
 be overidden, there is no use for polymorphism, and forcing it would do more harm than good.
