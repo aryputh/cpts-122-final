@@ -14,7 +14,7 @@
 - Johnny Davis (Section 5)
 
 ### Link to Video
-[INSERT]
+[YouTube 🔗](https://youtu.be/71UAxbFAz78)
 
 ### Test Cases
 There are 5 different pickup types, these are our 5 test cases.<br>
