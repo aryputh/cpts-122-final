@@ -7,11 +7,11 @@
 4. Collect various items around the map.
 
 ### Download Link
-[Google Drive 🔗](https://drive.google.com/file/d/1jQ-S5pchkhKBgvp0egKq04AtiRcXCnHa/view?usp=sharing) (Link will be deprecated later)
+This game requires your own downloading of files and compilation to play. You can instead look at the video to see how the game is played.
 
 ### Collaborators
-- Aryan Puthran (Section 6)
-- Johnny Davis (Section 5)
+- Aryan Puthran (Class Lab Section 6)
+- Johnny Davis (Class Lab Section 5)
 
 ### Link to Video
 [YouTube 🔗](https://youtu.be/71UAxbFAz78)
