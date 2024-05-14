@@ -1,10 +1,8 @@
 ## cpts-122-final
 
 ### Playing Instructions
-1. Download the .zip linked below.
-2. Unzip file and double-click the .exe file, make sure all the contents of the .zip file are together.
-3. Use WASD to move and the mouse to look around.
-4. Collect various items around the map.
+1. Use WASD to move and the mouse to look around.
+2. Collect various items around the map.
 
 ### Download Link
 This game requires your own downloading of files and compilation to play. You can instead look at the video to see how the game is played.
